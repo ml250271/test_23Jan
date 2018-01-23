@@ -25,8 +25,8 @@ def index():
     return page
 
 
-@app.route("/comments")
-def comm():
+@app.route("/api/v1.0/comments")
+def api_comments():
     page2 = """
     <!DOCTYPE html>
     <html>
@@ -38,8 +38,12 @@ def comm():
     <body>
     <h1>Table should be here</h1>
     </body>
-    <p id=table></p>
+    <p id=table>
+    { </p>
     </html>
     """
     return page2
 #     return page.format(table)
+
+
+
